@@ -1,0 +1,56 @@
+/* etiqueta HTML va con el nombre*/
+/* clases va con "." adelante */
+/* id va con "#" adelante*/
+/*css lee de abajo para arriba*/
+/*ctrl+f para buscar calses*/
+
+body{
+    background-color: rebeccapurple ;/* para darle color al fondo*/
+    color: darkturquoise;/*color de fuente*/
+
+}
+#redes{
+    text-align: center; /*centras el texto*/
+    margin: auto;/*para q se ponga un margen automatico*/
+}
+/*si quiero fromatear los puntos, le debo sacar el estilo en html a los "li"*/
+li{
+    list-style-type: none;
+    margin-left: -3.5% ; /*no lo pongo el px porque en modo celular se puede ver feo*/
+}
+#aca{
+    text-align: left;
+
+}
+#prueba{
+    text-align: right;
+}
+.imgPerfil{ /*redondeamos la imagen de la opcion 2*/
+    border-radius: 100%;
+    border-style: solid;
+   
+}
+.opcion2{
+    /*agrando la letra de "opcion 2"*/
+    font-size: 5rem;
+}
+.bunner{
+    justify-content: end;
+    display: flex;
+}
+.color{
+    color: chartreuse; /*cambio de color el "2" de "opcion 2"*/
+}
+.video{
+    margin: 7rem; /*opcion1, es para todos*/
+    margin-top: 7rem;/*opcion 2,a cada uno*/
+    margin-left: 7rem;
+    margin-bottom: 7rem;
+    margin-right: 7rem; 
+    margin: 7rem 2rem 0 50rem;/*opcion 3, se lo indica como las agujas del reloj*/
+    border: 2rem solid red;
+}
+.mapa{
+    /*se trabaja igual q el margin solo q con padding,solo q el padding no puede ser negativo*/
+    padding: 10%;
+}

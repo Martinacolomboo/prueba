@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- para poner los estilos de css en html-->
+    <link rel="stylesheet" href="assets/css/styles.css">
     <title>Index</title>
 </head>
 <body>
-
+    <!--contenido de tipo introductorio-->
+    <header>
     <h1>martina </h1>
+    </header>
     <h2>hola</h2>
     <h3>chau</h3>
     <h4>a</h4>
@@ -17,7 +21,7 @@
     <hr>
     <p>cualquier cosa</p>
     <!-- seccion para redes -->
-    <section>
+    <section id="redes"> <!--se le pone id para poder identificarlo en css-->
         <h2>Redes</h2>
         <ul>
             <li><a href="https://facebook.com/" target="_blank">un enlace a facebook</a></li>
@@ -25,17 +29,17 @@
             <li><a href="https://github.com/" target="_blank">un enlace a github</a></li>
         </ul>
     </section>
-    <section>
+    <section id="aca">
         <!-- aca  -->
-        aca <strong>escribi</strong> algo
+       <p>aca <strong>escribi</strong> algo</p> 
         <br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/9cO1RVQLRUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/9cO1RVQLRUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <br>
-        <img src="diegoArmandoBarreras.jpg" alt="La-imagen-de-Diego">
+        <img src="assets/img/diegoArmandoBarreras.jpg" alt="La-imagen-de-Diego" title="diego Armando">
     </section>
-    <section>
+    <section id="prueba">
         <h2>prueba</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.1827993377437!2d2.2928388156749246!3d48.87379167928894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fec70fb1d8f%3A0xd9b5676e112e643d!2sArco%20de%20Triunfo%20de%20Par%C3%ADs!5e0!3m2!1ses-419!2sar!4v1670803201279!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.1827993377437!2d2.2928388156749246!3d48.87379167928894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fec70fb1d8f%3A0xd9b5676e112e643d!2sArco%20de%20Triunfo%20de%20Par%C3%ADs!5e0!3m2!1ses-419!2sar!4v1670803201279!5m2!1ses-419!2sar" class="mapa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <br>
         <label for="">escribi lo q quieras</label>
         <input type="text" placeholder="Dejame tu mensaje">
@@ -48,11 +52,14 @@
         </div>
     </section>
     <section>
-        <h2>Opción 2</h2>
+        <h2 class="opcion2">Opción <span class="color">2</span></h2><!-- el span es para q no se vaya a otra linea y lo separamos para q en css lo pueda cambiar de color-->
         <p>si apretas la imagen te lleva al video</p>
-        <a href="https://www.youtube.com/embed/9cO1RVQLRUY" target="_blank"> 
-            <img src="diegoArmandoBarreras.jpg" alt="La-imagen-de-Diego">
+        <!-- le ponemos una clase para poder modificar la imagen en css y solo esta-->
+        <div class="bunner">
+        <a  href="https://www.youtube.com/embed/9cO1RVQLRUY" target="_blank"> 
+            <img class="imgPerfil"src="assets/img/diegoArmandoBarreras.jpg" alt="La-imagen-de-Diego" title="diegoArmandoBarreras">
         </a>
+        </div>
         <p> <strong>texto en negrita</strong></p>
         <p> <strike>texto tachado</strike></p>
         <p><i>texto en cursiva</i></p>
