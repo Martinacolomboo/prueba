@@ -14,51 +14,28 @@
     <title>Index</title>
 </head>
 <body>
+   
     <!--copiamos de bootstrap el navBar, que es la barar de inicio-->
     <!--seccion de navbar-->
     <section id="navbar">
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
+          <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar" target="_blank"><img class="logoAp" src="assets/img/logo argentina programa.png" alt="logo-argentina-programa"></a>
             <ul class="list-group list-group-horizontal">
                 <li class="list-group-item"><i class="fa-brands fa-linkedin"></i></li>
                 <li class="list-group-item"><i class="fa-brands fa-github"></i></li>
                 <li class="list-group-item"><i class="fa-brands fa-codepen"></i></li>
             </ul>
             <!--bottom-->
-            <button type="button" class="btn btn-primary">Iniciar Secion</button><!--como es solo un boton y necesitamos q se vaya a otro lado, no nos sirve-->
+            <button type="button" class="btn btn-light">Iniciar Secion</button><!--como es solo un boton y necesitamos q se vaya a otro lado, no nos sirve-->
             <!--modal-->
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">
                 <i class="fa-solid fa-lock"></i>
             </button>
-            
+            <button type="button" class="btn btn-light">
+                <i class="fa-solid fa-lock-open"></i>
+            </button>
             <!-- Modal Esta abajo-->
             
           </div>
@@ -77,14 +54,53 @@
     <hr>
     <p>cualquier cosa</p>
     <!-- seccion para redes -->
-    <section id="redes"> <!--se le pone id para poder identificarlo en css-->
+    <!--<section id="redes"> se le pone id para poder identificarlo en css
         <h2>Redes</h2>
         <ul>
             <li><a href="https://facebook.com/" target="_blank">un enlace a facebook</a></li>
             <li><a href="https://linkedin.com/" target="_blank">un enlace a linkedin </a></li>
             <li><a href="https://github.com/" target="_blank">un enlace a github</a></li>
         </ul>
+    </section>-->
+    <section id="redes">
+        <h2 class="text-center mt-4 pb">Redes</h2>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-6">
+                    <h1>Diego Armando</h1>
+                    <h4>Constructor de paredes</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sunt dicta recusandae sit, minima dolorum. Vero non tempora eius sequi dolores tenetur nobis recusandae, nulla quo velit. Amet, officia reiciendis?</p>
+                    
+                  </div>
+              </div>
+              <div class="col-6"><!--te queda la foto estatica-->
+                <div class="banner">
+                    <a  href="https://www.youtube.com/embed/9cO1RVQLRUY" target="_blank"> 
+                        <img class="imgPerfil"src="assets/img/diegoArmandoBarreras.jpg" alt="La-imagen-de-Diego" title="diegoArmandoBarreras">
+                    </a>
+                </div>
+            </div>
+          </div>
     </section>
+    <section id="editRedes" class="bg-dark mt-4 p-2"><!--tambien se puede usar pi enves de p-2-->
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#imgPerfilModal">
+                    Editar imagen
+                </button>
+                
+              </div>
+              <div class="col">
+                <button class="btn btn-light"> Editar nombre</button>
+              </div>
+              <div class="col">
+                <button class="btn btn-light"> Editar info</button>
+              </div>
+            </div>
+          </div>
+    </section>
+    
     <section id="aca">
         <!-- aca  -->
        <p>aca <strong>escribi</strong> algo</p> 
@@ -111,7 +127,7 @@
         <h2 class="opcion2">Opción <span class="color">2</span></h2><!-- el span es para q no se vaya a otra linea y lo separamos para q en css lo pueda cambiar de color-->
         <p>si apretas la imagen te lleva al video</p>
         <!-- le ponemos una clase para poder modificar la imagen en css y solo esta-->
-        <div class="bunner">
+        <div class="banner">
         <a  href="https://www.youtube.com/embed/9cO1RVQLRUY" target="_blank"> 
             <img class="imgPerfil"src="assets/img/diegoArmandoBarreras.jpg" alt="La-imagen-de-Diego" title="diegoArmandoBarreras">
         </a>
@@ -147,6 +163,30 @@
                     <div class="mb-3">
                         <label for="exampleInputSobreMi" class="form-label">Texto largo</label>
                         <textarea class="form-control" id="exampleInputPassword1"></textarea>
+                    </div>
+                </form> 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--modal img Perfil-->
+    <div class="modal fade" id="imgPerfilModal" tabindex="-1" aria-labelledby="imgPerfilModal" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="imgPerfilmodal">Editar Imagen Perfil</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!--overviews(boostrap)-->
+                <form>
+                    <div >
+                        <label for="imgPerfil" class="form-label"> Editar Imagen</label>
+                        <input type="url" placeholder="Inserte url de la imagen" id="imgPerfil" name="imgPerfil" required>
                     </div>
                 </form> 
             </div>

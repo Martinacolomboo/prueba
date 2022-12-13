@@ -25,19 +25,19 @@ li{
 #prueba{
     text-align: right;
 }
-.imgPerfil{ /*redondeamos la imagen de la opcion 2*/
+/*.imgPerfil{ /*redondeamos la imagen de la opcion 2
     border-radius: 100%;
     border-style: solid;
    
-}
+}*/
 .opcion2{
     /*agrando la letra de "opcion 2"*/
     font-size: 5rem;
 }
-.bunner{
+/*.banner{
     justify-content: end;
     display: flex;
-}
+}*/
 .color{
     color: chartreuse; /*cambio de color el "2" de "opcion 2"*/
 }
@@ -53,4 +53,9 @@ li{
 .mapa{
     /*se trabaja igual q el margin solo q con padding,solo q el padding no puede ser negativo*/
     padding: 10%;
+}
+.logoAp{
+    filter:contrast(1);
+    /*se puede poner filter:invert(1) para q se cambie de blanco a negro*/
+
 }
